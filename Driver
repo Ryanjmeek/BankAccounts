@@ -1,0 +1,34 @@
+package assignment2;
+
+import javax.swing.JOptionPane;
+import java.lang;
+
+public class Driver {
+	
+	public static void main()
+	{
+		Customer ryan = new Customer(1, "Ryan", "1111 WallyWorld Ln");
+		Customer jon = new Customer(2, "Jon", "1111 NotWallyWorld Ln");
+		while(true)
+		{
+			String input = JOptionPane.showInputDialog("Input Transaction");
+			String splitInput[] = input.split(" ");
+			int isTran = whatTran(splitInput);
+			if(isValid == 1)
+			{
+				Int customerId = Int.valueOf(splitInput[0]);
+				char transactionType = splitInput[1];
+				Double amount = Double.valueOf(splitInput[2]);
+				
+			}
+			
+			else
+			{
+				System.out.println("Error, try again");
+			}
+			
+		}
+	}
+
+}
+
