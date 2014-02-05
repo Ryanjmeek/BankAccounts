@@ -1,0 +1,33 @@
+package assignment2;
+
+public class CheckingAccount extends BankAccount{
+	
+	public CheckingAccount(double initialBalance)
+	{
+		super(initialBalance);
+	}
+	
+	public CheckingAccount(int acct, Customer owner, double initBalance)
+	{
+		super(acct,owner,initBalance);
+	}
+	
+	public void withdraw(double amount)
+	{
+		if(balance < amount)
+		{
+			if(ownersName.savAcct.getBalance() < (amount - balance + 20))
+			{
+				return;
+			}
+			double nextAmount = amount - balance;
+			balance = 0;
+			ownersName.savAcct.balance -= nextAmount;
+			return;
+			
+		}
+		
+		balance -= amount;
+	}
+	
+}
