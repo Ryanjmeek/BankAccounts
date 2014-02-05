@@ -1,0 +1,23 @@
+package assignment2;
+
+public class SavingsAccount extends BankAccount{
+	
+	public SavingsAccount(double initialBalance)
+	{
+		super(initialBalance);
+	}
+	
+	public SavingsAccount(int acct, Customer owner, double initBalance)
+	{
+		super(acct,owner,initBalance);
+	}
+	
+	public void applyInterest()
+	{
+		if(balance >= 1000)
+		{
+			balance = balance * 1.04;
+		}
+	}
+	
+}
