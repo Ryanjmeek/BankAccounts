@@ -1,0 +1,62 @@
+package assignment2;
+
+public class Customer {
+	
+	protected int custNumber;
+	protected String custName;
+	protected String custAddress;
+	protected CheckingAccount checkAcct;
+	protected SavingsAccount savAcct;
+	protected SavingsAccount loanAcct;
+	protected SavingsAccount autoLoanAcct;
+	
+	public Customer()
+	{
+		custNumber = 0;
+		custName = new String();
+		custAddress = new String();
+		
+	}
+	
+	public Customer(int number, String name, String address)
+	{
+		custNumber = number;
+		custName = name;
+		custAddress = address;
+		checkAcct = new CheckingAccount(number,this,0);
+		savAcct = new SavingsAccount(number,this,0);
+		loanAcct = new SavingsAccount(number,this,0);
+		autoLoanAcct = new SavingsAccount(number,this,0);
+		
+	}
+	
+	public String getName()
+	{
+		return custName;
+	}
+	
+	public String getAddress()
+	{
+		return custAddress;
+	}
+	
+	public int getNumber()
+	{
+		return custNumber;
+	}
+	
+	public void setName(String name)
+	{
+		custName = name;
+	}
+
+	public void setAddress(String address)
+	{
+		custAddress = address;
+	}
+	
+	public void setNumber(int number)
+	{
+		custNumber = number;
+	}
+}
