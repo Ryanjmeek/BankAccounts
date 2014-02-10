@@ -117,15 +117,35 @@ public class Driver {
 				break;
 			}
 			
-		}
-		else if(whatTran == 2)
-		{
+		}		{
 			
 		}
 		else if(whatTran == -1)
 		{
+		else if(whatTran == 2)
+
 			
 		}
+	}
+
+	
+	public void summarize(Customer cust1, Customer cust2)
+	{	//summarize both Customer's data
+		System.out.println("Customer %s's summary:",cust1.custName);
+		System.out.println("ID #: %d", cust1.custNumber);
+		System.out.println("Address: %s", cust1.custAdress);
+		System.out.println("Checking account balance: &d", cust1.checkAcct.balance);
+		System.out.println("Savings account balance: %d", cust1.savAcct.balance);
+		System.out.println("Loan account balance: %d", cust1.loanAcct.balance);
+		System.out.println("Auto loan account balance: %d\n", cust1.autoLoanAcct.balance);
+		
+		System.out.println("Customer %s's summary:",cust2.custName);
+		System.out.println("ID #: %d", cust2.custNumber);
+		System.out.println("Address: %s", cust2.custAdress);
+		System.out.println("Checking account balance: &d", cust2.checkAcct.balance);
+		System.out.println("Savings account balance: %d", cust2.savAcct.balance);
+		System.out.println("Loan account balance: %d", cust2.loanAcct.balance);
+		System.out.println("Auto loan account balance: %d", cust2.autoLoanAcct.balance);
 	}
 
 }
