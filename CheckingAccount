@@ -20,7 +20,7 @@ public class CheckingAccount extends BankAccount{
 			{
 				return;
 			}
-			double nextAmount = amount - balance;
+			double nextAmount = amount - balance + 20;
 			balance = 0;
 			ownersName.savAcct.balance -= nextAmount;
 			return;
