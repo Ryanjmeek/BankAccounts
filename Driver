@@ -117,14 +117,14 @@ public class Driver {
 				break;
 			}
 			
-		}		{
+		}		
 			
-		}
+		
 		else if(whatTran == -1)
 		{
+		}
 		else if(whatTran == 2)
-
-			
+		{
 		}
 	}
 
